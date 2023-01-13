@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<fx:root fx:id="view" hgap="5.0" prefHeight="150.0" prefWidth="200.0" type="GridPane" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <rowConstraints>
+      <RowConstraints valignment="CENTER" vgrow="NEVER" />
+      <RowConstraints valignment="CENTER" vgrow="NEVER" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+      <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+      <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" />
+   </columnConstraints>
+   <children>
+      <Label fx:id="nombreMesLabel" text="enero" GridPane.columnSpan="7" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="NEVER" />
+      <Label text="L" GridPane.rowIndex="1" />
+      <Label text="M" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="X" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label text="J" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      <Label text="V" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+      <Label text="S" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+      <Label text="D" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+      <Label text="30" GridPane.rowIndex="2" />
+      <Label text="30" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label text="30" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Label text="30" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+      <Label text="30" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <Label text="30" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+      <Label text="30" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+      <Label text="30" GridPane.rowIndex="3" />
+      <Label text="30" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label text="30" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Label text="30" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <Label text="30" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <Label text="30" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+      <Label text="30" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+      <Label text="30" GridPane.rowIndex="4" />
+      <Label text="30" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label text="30" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Label text="30" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <Label text="30" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+      <Label text="30" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+      <Label text="30" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+      <Label text="30" GridPane.rowIndex="5" />
+      <Label text="30" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label text="30" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label text="30" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <Label text="30" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+      <Label text="30" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+      <Label text="30" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+      <Label text="30" GridPane.rowIndex="6" />
+      <Label text="30" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label text="30" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Label text="30" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+      <Label text="30" GridPane.columnIndex="4" GridPane.rowIndex="6" />
+      <Label text="30" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+      <Label text="30" GridPane.columnIndex="6" GridPane.rowIndex="6" />
+      <Label text="30" GridPane.rowIndex="7" />
+      <Label text="30" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label text="30" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <Label text="30" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Label text="30" GridPane.columnIndex="4" GridPane.rowIndex="7" />
+      <Label text="30" GridPane.columnIndex="5" GridPane.rowIndex="7" />
+      <Label text="30" GridPane.columnIndex="6" GridPane.rowIndex="7" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</fx:root>
