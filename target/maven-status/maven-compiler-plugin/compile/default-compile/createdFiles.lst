@@ -1,0 +1,6 @@
+dad\calendario\ui\CalendarView.class
+dad\calendario\ui\Main.class
+dad\calendario\ui\CalendarView$TimeSlot.class
+dad\calendario\ui\CalendarioApp.class
+dad\calendario\component\MonthCalendar.class
+dad\calendario\ui\controllers\Controller.class

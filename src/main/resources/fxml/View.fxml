@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<GridPane fx:id="view" hgap="5.0" vgap="5.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<GridPane fx:id="view" hgap="5.0" stylesheets="@../css/calendario.css" vgap="5.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
    <rowConstraints>
       <RowConstraints valignment="CENTER" vgrow="NEVER" />
       <RowConstraints valignment="CENTER" vgrow="ALWAYS" />
@@ -34,9 +34,9 @@
       <MonthCalendar fx:id="octubreCalendar" GridPane.columnIndex="1" GridPane.rowIndex="3" />
       <MonthCalendar fx:id="noviembreCalendar" GridPane.columnIndex="2" GridPane.rowIndex="3" />
       <MonthCalendar fx:id="diciembreCalendar" GridPane.columnIndex="3" GridPane.rowIndex="3" />
-      <Button mnemonicParsing="false" onAction="#onPrevioAction" text="&lt;" GridPane.halignment="LEFT" />
-      <Button mnemonicParsing="false" onAction="#onSiguienteAction" text="&gt;" GridPane.columnIndex="3" GridPane.halignment="RIGHT" />
-      <Label fx:id="yearLabel" text="AÑO" GridPane.columnSpan="4" />
+      <Button id="anterior-button" mnemonicParsing="false" onAction="#onPrevioAction" text="&lt;" GridPane.halignment="LEFT" />
+      <Button id="posterior-button" mnemonicParsing="false" onAction="#onSiguienteAction" text="&gt;" GridPane.columnIndex="3" GridPane.halignment="RIGHT" />
+      <Label fx:id="yearLabel" styleClass="year" text="AÑO" GridPane.columnSpan="4" />
    </children>
    <padding>
       <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />

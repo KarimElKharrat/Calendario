@@ -27,6 +27,8 @@ public class MonthCalendar extends GridPane implements Initializable {
 	
 	// view
 	
+	private Label today;
+	
 	@FXML
     private Label nombreMesLabel;
 
@@ -79,15 +81,33 @@ public class MonthCalendar extends GridPane implements Initializable {
 		LocalDate start = initial.withDayOfMonth(1);
 		LocalDate end = initial.withDayOfMonth(initial.getMonth().length(initial.isLeapYear()));
 		
-		int dia = 1;
+		int day = 1;
 		for(int i = 8; i <= (view.getColumnCount() * view.getColumnCount()); i++) {
 			
-			if(i >= start.getDayOfWeek().getValue() + 7 && dia <= end.getDayOfMonth())
-				((Label) view.getChildren().get(i)).setText(dia++ + "");
-			else
+			if(i >= start.getDayOfWeek().getValue() + 7 && day <= end.getDayOfMonth()) {
+				Label diaDelMes = (Label) view.getChildren().get(i);
+				diaDelMes.setText(day++ + "");
+				
+				handleTodayStyle(year, month, day, diaDelMes);
+				
+			} else
 				((Label) view.getChildren().get(i)).setText("");
 		}
 		
+	}
+	
+	private void handleTodayStyle(int year, int month, int day, Label diaDelMes) {
+		
+		if(isToday(year, month, day)) {
+			today = diaDelMes;
+			today.getStyleClass().add("today");
+		} else if(today != null && LocalDate.now().getYear() != year)
+			today.getStyleClass().clear();
+		
+	}
+
+	private boolean isToday(int year, int month, int day) {
+		return LocalDate.now().getMonthValue() == month+1 && LocalDate.now().getYear() == year && LocalDate.now().getDayOfMonth() == day-1;
 	}
 
 	public final IntegerProperty monthPropertyProperty() {

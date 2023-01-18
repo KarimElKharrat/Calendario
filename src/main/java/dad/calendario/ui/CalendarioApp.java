@@ -13,6 +13,8 @@ public class CalendarioApp extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
+//		controller.getView().getStylesheets().add(getClass().getResource("/style/calendario.css").toExternalForm());
+		
 		primaryStage.setTitle("Calendario");
 		primaryStage.setScene(new Scene(controller.getView()));
 		primaryStage.getIcons().add(new Image(getClass().getResource("/images/calendar-32x32.png").toString()));
